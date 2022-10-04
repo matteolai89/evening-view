@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 0%;
+  background-color: rgb(203, 211, 255);
+}
+
+.food {
+  background-color: rgb(203, 211, 255);
+  margin: 0;
+  letter-spacing: 15px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffa3daf1;
+}
+
+.appetizers {
+  background-color: rgb(203, 211, 255);
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  color: #af8aa084;
+  padding-right: 12px;
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    width: auto;
+  }
+}
+@media screen and (max-width: 840px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    width: auto;
+  }
+}

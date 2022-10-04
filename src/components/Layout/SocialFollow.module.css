@@ -1,0 +1,84 @@
+.social-container {
+  background: #c6b2e2;
+  padding: 17px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+.socialText {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+button.social {
+  transition: transform 250ms;
+  display: inline-block;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+button.social:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+button.linkedin {
+  color: #ffffff;
+  padding: 0px 30px;
+}
+
+button.facebook {
+  color: #ffffff;
+  padding: 0px 30px;
+}
+
+button.instagram {
+  color: rgb(255, 255, 255);
+  padding: 0px 30px;
+}
+
+.footerText {
+  font-size: 12px;
+  text-align: center;
+  padding: 1.5%;
+  color: rgb(255, 255, 255);
+  background-color: #c6b2e2;
+  margin-bottom: -10px;
+}
+
+@media screen and (max-width: 414px) {
+  .social-container {
+    position: relative;
+    text-align: center;
+  }
+  button.social {
+    padding-top: -200px;
+    bottom: 0;
+
+    align-items: center;
+  }
+  .socialText {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 840px) {
+  .social-container {
+    position: relative;
+    text-align: center;
+  }
+  button.social {
+    padding-top: -200px;
+    bottom: 0;
+
+    align-items: center;
+  }
+  .socialText {
+    margin-right: 0;
+  }
+}

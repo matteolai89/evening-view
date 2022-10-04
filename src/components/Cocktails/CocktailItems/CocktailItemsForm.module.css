@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form button {
+  font: inherit;
+  cursor: pointer;
+  background-color: rgba(241, 91, 181, 0.769);
+  border: 1px solid rgba(241, 91, 181, 0.5);
+  color: white;
+  padding: 0.2rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: rgb(241, 91, 181);
+  border-color: rgba(241, 91, 181, 0.5);
+}

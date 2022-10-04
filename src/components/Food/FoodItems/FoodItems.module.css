@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 320px;
+  height: 500px;
+  perspective: 1000px;
+  background-color: rgb(203, 211, 255);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  cursor: default;
+  margin-top: 10%;
+}
+
+.description {
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  cursor: default;
+  font-size: 11px;
+}
+
+.price {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #130101;
+  font-size: 12px;
+  text-align: right;
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+.flip {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.6s 0.1s;
+  margin-top: 0px;
+}
+
+.container:hover .flip,
+.container:focus-within .flip {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 229, 229);
+  margin: 10%;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .front .image {
+    clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+  } */
+
+.front .image::before {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(18deg);
+
+  width: 100%;
+  height: 6px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+
+  transition: 0.1s;
+}
+
+/* .back .image {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+  } */

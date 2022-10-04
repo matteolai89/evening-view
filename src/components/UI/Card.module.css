@@ -1,0 +1,15 @@
+.card {
+  width: 20rem;
+  height: 30rem;
+  margin-bottom: 10%;
+  gap: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* @media screen and (max-width: 414px) {
+  .card {
+    width: 10rem;
+    height: 20rem;
+  }
+} */

@@ -1,0 +1,92 @@
+.container {
+  font: inherit;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  border-radius: 10%;
+  background-color: transparent;
+}
+
+.button:hover .icon,
+.button:active .icon {
+  color: #f15bb5;
+}
+
+.icon {
+  width: 30px;
+  height: 1.2rem;
+  color: black;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  cursor: pointer;
+  margin-left: -10px;
+  margin-bottom: 25px;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  border-radius: 60%;
+  background-color: rgb(253, 150, 212);
+  color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px 15px rgba(253, 150, 212, 0.082);
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  border: 0.5px solid rgb(255, 255, 255);
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: rgba(241, 91, 181, 0.5);
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .icon {
+    width: 15px;
+  }
+  .badge {
+    height: 12px;
+    width: 12px;
+    font-size: inherit;
+  }
+}
